@@ -5,12 +5,12 @@ If you're here probably you want to integrate Xiaomi Vacuum v1 & v2 with Home As
 
 ## On the Vacuum
 
-###### Root the vacuum
+### Root the vacuum
 
 If you don't know how to gain SSH access to your vacuum please read [the article](https://github.com/dgiese/dustcloud/wiki/VacuumRobots-manual-update-root-Howto) on dustcloud:
 
 
-###### Install on the vacuum
+### Install on the vacuum
 
 - Create SSH keypair with the command: **ssh-keygen**
 
@@ -25,7 +25,7 @@ If you don't know how to gain SSH access to your vacuum please read [the article
 - Make sure to give to the file the right permissions with the command: **chown 755 /opt/rockrobo/scripts/maps_to_ha.sh**.
 - Resart the vacuum. (Type `reboot` when logged in the the vacuum.)
 
-###### Install on Home Assistant (Hass.io)
+## Install on Home Assistant (Hass.io)
 
 The directories in the scripts are preconfigured according to the directories in a Hass.io Home Assistant installation. So it should not be required to modify the scripts.
 
@@ -97,7 +97,7 @@ logger:
 
 **Checkpoint 3:** At this point everything is set up. Try out by starting the cleaning of your vacuum. You should see how new files **navmap<< some number >>.ppm** appear in your **/config/vacuum** directory and that **/config/www/navmap.png** is updated regularly. 
 
-###### Show the map on Home Assistant
+### Show the map on Home Assistant
 
 Add the following component to your Home Assistant **/config/configuration.yaml**:
 
