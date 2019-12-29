@@ -99,7 +99,7 @@ logger:
 
 ### Show the map on Home Assistant
 
-Add the following component to your Home Assistant **/config/configuration.yaml**:
+- Add the following component to your Home Assistant **/config/configuration.yaml**:
 
 ```
 camera:
@@ -110,8 +110,8 @@ camera:
     framerate: 1
 ```
 **Note:** Change `http` to `https` in case you set up an ssl key (you also might need to set `verify_ssl: false` as the ssl key is only valid for your domain).
-
-In your lovelace configuration, add a new `picture_entity` card (update the entity_id of your vacuum).
+- Restart HA.
+- In your lovelace configuration, add a new `picture_entity` card (update the entity_id of your vacuum).
 ```
 name: Vacuum Map
 camera_image: camera.vacuum_map
