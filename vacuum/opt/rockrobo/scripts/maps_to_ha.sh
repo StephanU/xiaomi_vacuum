@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 RHOST="###IPADDR####"
 RPORT="22"
