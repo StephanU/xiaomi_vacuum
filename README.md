@@ -41,7 +41,7 @@ $ chown hassio /config/vacuum
 ![Image of Vacuum folder](/images/vacuum_folder.png?raw=true)
 
 If this is not the case, stop your vacuum, ssh login to your vacuum, execute `/opt/rockrobo/scripts/maps_to_ha.sh` manually, start the vacuum and take a look at the output of the scripts. (Common problems: wrong IP address of the Home Assistant configured, ssh key not properly set up, permission problem with /config/vacuum (ownership not changed)). 
-**You need to get this running before going on with the installation.***
+**You need to get this running before going on with the installation.**
 
 - Copy the script homeassistant/config/scripts/build_maps.py to /config/scripts/build_maps.py.
 - Copy the script homeassistant/config/scripts/incrond_vacuum_maps.sh to /config/scripts/incrond_vacuum_maps.sh.
