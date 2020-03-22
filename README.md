@@ -22,7 +22,7 @@ If you don't know how to gain SSH access to your vacuum please read [the article
     * Fill RHOST with ##HOMEASSISTANT_IPADDRESS##
     * Fill RPORT with ##HOMEASSISTANT_SSHPORT##
 
-- Make sure to give to the file the right permissions with the command: **chown 755 /opt/rockrobo/scripts/maps_to_ha.sh**.
+- Make sure to give to the file the right permissions with the command: **chmod 755 /opt/rockrobo/scripts/maps_to_ha.sh**.
 - Resart the vacuum. (Type `reboot` when logged in the the vacuum.)
 
 ## Install on Home Assistant (Hass.io)
