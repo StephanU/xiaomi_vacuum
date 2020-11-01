@@ -1,5 +1,5 @@
 """
-#!/usr/bin/env python3.7
+#!/usr/bin/env python3.8
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -93,6 +93,13 @@ def build_map(slam_log_data, map_image_data):
             # Hide everything else (if you want sensors to be hidden uncomment this)
             #elif pixdata[x, y] not in [color_move, color_dot]:
             #    pixdata[x, y] = color_home_background
+
+    # crop the image (half height, half width) as the image is quite small
+    # recently, I don't know what changed... :(
+    img_width, img_height = map_image.size
+    target_width = img_width / 2
+    target_height = img_height / 2
+    map_image = map_image.crop((target_width / 2, target_height / 2, img_width - target_width / 2, img_height - target_height / 2))
 
     temp = io.BytesIO()
     map_image.save(temp, format="png")

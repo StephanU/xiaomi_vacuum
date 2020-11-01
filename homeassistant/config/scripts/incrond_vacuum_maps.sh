@@ -29,7 +29,7 @@ fi
 
 # Process image
 [ -z "${2}" ] || logger -t map_to_ha "${1} starting to render map."
-python3.7 ${HADIR}/scripts/build_maps.py -map ${NAVMAP} -slam ${HADIR}/vacuum/SLAM_fprintf.log -out ${HADIR}/www/navmap.png
+python3.8 ${HADIR}/scripts/build_maps.py -map ${NAVMAP} -slam ${HADIR}/vacuum/SLAM_fprintf.log -out ${HADIR}/www/navmap.png
 RES=$?
 
 # Release lock
